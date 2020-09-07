@@ -1,5 +1,5 @@
-# nixos-config-modules
+# nixos-config-utils
 
-This is a collection of modules I am comfortable sharing. 
+This is a collection of utilities I am comfortable sharing.
 
-There is no guarantee of backwards compatibility.
+There is no guarantee of stability.
