@@ -1,11 +1,12 @@
 {
-  description = "A very basic flake";
+  description = "nixos-config-modules";
 
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-20.03";
+  };
   outputs = { self, nixpkgs }: {
-
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
-
-    defaultPackage.x86_64-linux = self.packages.x86_64-linux.hello;
-
+    lib = {
+      lorri = import ./src/modules/lorri.nix;
+    };
   };
 }
