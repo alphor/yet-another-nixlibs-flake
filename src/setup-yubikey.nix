@@ -4,7 +4,7 @@
   hardware.u2f.enable = true;
   
   environment.systemPackages = [
-    yubikey-personalization
+    pkgs.yubikey-personalization
   ];
   programs.gnupg.agent = {
     enable = true;
