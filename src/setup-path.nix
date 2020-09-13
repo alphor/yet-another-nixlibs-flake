@@ -2,7 +2,7 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
     firefox
     wget
     vim

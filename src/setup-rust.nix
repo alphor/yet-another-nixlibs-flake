@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackage = with pkgs; let
+  environment.systemPackages = with pkgs; let
 
   in [
     direnv
