@@ -3,18 +3,20 @@
 
 {
   environment.systemPackages = with pkgs; [
-    firefox
-    wget
-    vim
     ag
-    emacs
-    git
-    syncthing
-    pass
-    direnv
-    stow
-    xcape
     age
+    autorandr
+    direnv
+    emacs
+    firefox
+    git
+    pass
+    pavucontrol
+    stow
+    syncthing
+    vim
+    wget
+    xcape
     xorg.xmodmap
   ];
 }
