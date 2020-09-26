@@ -10,6 +10,7 @@
     emacs
     firefox
     git
+    perkeep
     pass
     pavucontrol
     stow
