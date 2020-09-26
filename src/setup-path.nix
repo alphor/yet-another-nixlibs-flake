@@ -13,6 +13,7 @@
     perkeep
     pass
     pavucontrol
+    sqlite
     stow
     syncthing
     vim
