@@ -1,4 +1,4 @@
-# Return a module that provides a set of scripts thta back up to
+# Return a module that provides a set of scripts that back up to
 # backblaze b2 buckets, using gpg + duplicity
 
 {
