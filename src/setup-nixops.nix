@@ -1,15 +1,15 @@
 { pkgs, ... }:
 
 let
-  unstable = import (pkgs.fetchFromGitHub {
+  # nixops rarely cuts releases: 1.7 was released on April 17th, 2019!
+  # so fetch the latest head. It will probably be fine.
+  nixopsFetch = (pkgs.fetchFromGitHub {
     owner = "NixOS";
-    repo = "nixpkgs";
-    # a head revision that passed CI as of 09/26/2020
-    rev = "58121fe1b085e201593f38e3b5eda0407dbd8e98";
-    sha256 = "1j0q5lzycl4p5fah5vgaqahh55xvcg1c1lyc2r1s6gh9vg8q3q47";
-  }) { };
+    repo = "nixops";
+    rev = "6fc9ca59a93907aef9fbf74a4815c01282b535c5";
+    sha256 = "0pwqxgfbdwzhqzpn91xxkvmdhqwhapcbjhhp6cfcf0vf409myzga";
+  });
+  nixops = (import nixopsFetch);
 in {
-  environment.systemPackages = [
-    unstable.nixops
-  ];
+  environment.systemPackages = [ nixops ];
 }
