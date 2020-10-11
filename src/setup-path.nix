@@ -6,10 +6,12 @@
     ag
     age
     autorandr
+    backblaze-b2
     direnv
     emacs
     firefox
     git
+    gotools
     perkeep
     pass
     pavucontrol
@@ -20,5 +22,6 @@
     wget
     xcape
     xorg.xmodmap
+    youtube-dl
   ];
 }
