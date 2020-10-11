@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
   imports = [
@@ -13,23 +13,27 @@
 
       kernelModules = [ ];
     };
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
     kernelModules = [ "kvm-intel" ];
     extraModulePackages = [ ];
   };
 
-  filesystems = {
+  fileSystems = {
     "/" = {
-      device = "/dev/disk/by-label/root";
+      device = "/dev/disk/by-uuid/93543ff0-8799-418f-b948-5588bc60ad5b";
       fsType = "ext4";
     };
     "/boot" = {
-      device = "/dev/disk/by-label/boot";
+      device = "/dev/disk/by-uuid/F402-2745";
       fsType = "vfat";
     };
   };
 
   swapDevices = [
-    { device = "/dev/disk/by-label/swap"; }
+    { device = "/dev/disk/by-uuid/304295b8-90db-485e-b775-998a466fcf46"; }
   ];
 
   nix.maxJobs = lib.mkDefault 4;
