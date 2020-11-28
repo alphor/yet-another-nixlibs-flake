@@ -7,14 +7,18 @@
     age
     autorandr
     backblaze-b2
+    bind
+    chromium
     direnv
     emacs
     firefox
     git
     gotools
+    msgpack-tools
     perkeep
     pass
     pavucontrol
+    signify
     sqlite
     stow
     syncthing
