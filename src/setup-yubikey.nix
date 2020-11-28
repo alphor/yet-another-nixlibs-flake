@@ -5,6 +5,7 @@
   
   environment.systemPackages = [
     pkgs.yubikey-personalization
+    pkgs.yubikey-manager
   ];
   programs.gnupg.agent = {
     enable = true;
