@@ -15,6 +15,7 @@
     git
     gotools
     msgpack-tools
+    openvpn
     perkeep
     pass
     pavucontrol
@@ -25,6 +26,7 @@
     vim
     wget
     xcape
+    qemu
     xorg.xmodmap
     youtube-dl
   ];
