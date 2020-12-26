@@ -26,7 +26,6 @@
     vim
     wget
     xcape
-    qemu
     xorg.xmodmap
     youtube-dl
   ];
