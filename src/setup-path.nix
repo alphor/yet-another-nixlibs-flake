@@ -14,7 +14,10 @@
     firefox
     git
     gotools
-    msgpack-tools
+    mpv
+    nodejs_latest
+    nodePackages.indium
+    openssl
     openvpn
     perkeep
     pass
