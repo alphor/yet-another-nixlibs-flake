@@ -1,4 +1,3 @@
-# A dumping ground for things I want on my path
 { pkgs, ... }:
 
 {
@@ -21,6 +20,7 @@
     openvpn
     perkeep
     pass
+    pciutils
     pavucontrol
     signify
     sqlite
@@ -30,6 +30,7 @@
     wget
     xcape
     xorg.xmodmap
+    yarn
     youtube-dl
   ];
 }
